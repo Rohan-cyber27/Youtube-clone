@@ -1,0 +1,73 @@
+.SUBSCRIBE-button{
+    background-color: rgb(189, 16, 16);
+    color: white;
+    border: none;
+    height:35px;
+    width: 105px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 40px;
+    transition: opacity 1s;
+}
+.SUBSCRIBE-button:hover{
+    opacity: 0.8;    
+}
+.SUBSCRIBE-button:active{
+    opacity: 0.5;
+}
+
+.join-button{
+    background-color: hsl(0, 0%, 100%);
+    color: rgb(39, 167, 213);
+    height: 35px;
+    width: 80px;
+    border-color:rgb(25, 126, 221);
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    margin-right: 10px;
+    transition:background-color 1s,
+    colour 1s;
+}
+.join-button:hover{
+    background-color:rgb(39, 167, 213);
+    color: white;
+}
+.join-button:active{
+    opacity: 0.8;
+}
+
+.tweet-button{
+    background-color: rgb(6, 177, 244);
+    color: white;
+    height: 35px;
+    width: 80px;
+    border-width: 1px;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    font-weight:bolder;
+    font-style:italic;
+    transition: box-shadow 0.15s;
+    margin: 20px;
+    margin-right: 40px;
+}
+.tweet-button:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+}
+.buynow-button{
+    background-color: rgb(251, 167, 11);
+    border-color: rgb(251, 167, 11) ;
+    border-style: solid;
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
+    font-weight:bolder;
+}
+.buynow-button:hover{
+    opacity: 0.8;
+}
+.buynow-button:active{
+    border-color:black;
+}
