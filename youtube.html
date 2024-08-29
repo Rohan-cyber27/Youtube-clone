@@ -2,64 +2,146 @@
 <html>
     <head>
         <title>youtube.com</title>
-        <style>
-            .thumbline{
-                width: 300px;
-                display: block;
-            }
-            .search-bar{
-                display: block;
-            }
-            .vedio-title{
-                margin-top: 0;
-            }
-            
-            .div-ex{
-                display:inline-block;
-            }
-            .vedio-prew{
-                width: 300px;
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 10px;
-            }
-            .chaannel-pic
-            {
-                display: inline-block;
-                width: 50px;
-                vertical-align: top; 
-            }
-            .video-info{
-                display: inline-block;
-                width: 200px;
-            }
-            .profile-pic{
-                width: 100%;
-            }
-        </style>
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/genreal.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <input class="search-bar" type="text" placeholder="search">
-        
-    <div class="vedio-prew">
-        <div> <img class="thumbline" src="thumbline/hq720.webp">
+        <div class="header">
+            <div class="left-section">
+                <img class="Hamburger-icon" src="icon/Hamburger_icon.svg.png"> <img class="youtube-logo" src="icon/yt_logo_rgb_light.png" ></div>
+            <div class="middile-section"><input class="search-bar" type="text" placeholder="search"></div>
+            <div class="right-section">right section</div>
         </div>
-        <div>
-            <div class="chaannel-pic"> <img class="profile-pic" src="profile/unnamed.jpg">
+        <div class="video-grid">
+            <div class="vedio-prew">
+            <div class="thumbline-row"> <img class="thumbline" src="thumbline/hq720.webp"> </div>
+            <div class="video-info-grid">
+                <div > <img class="profile-pic" src="profile/course.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="vedio-title">HTML & CSS Full Course - Beginner to Pro</p>
+                    <p class="vedio-author"> SuperSimpleDev </p>
+                    <p class="vedio-stats">11M views &#183; 2 years ago</p>
+                </div>      
+            </div>  
+        </div>
+    
+    
+        <div class="vedio-prew">
+            <div class="thumbline-row"> <img class="thumbline" src="thumbline/hq721.webp"> 
             </div>
-            <div class="video-info">
-                <p class="vedio-title">HTML & CSS Full Course - Beginner to Pro</p>
-                <p class="vedio-author"> SuperSimpleDev </p>
-                <p class="vedio-stat">11M views &#183; 2 years ago</p>
-            </div>      
-        </div>  
-    </div>
+            <div  class="video-info-grid"> 
+                <div > <img class="profile-pic" src="profile/Neeraj Walia.jpg">
+                </div>
+                <div class="video-info"> 
+                    <p class="vedio-title">My Resume 🔥🔥  | EZSNIPPET | Neeraj Walia</p>
+                    <p class="vedio-author"> Neeraj Walia </p>
+                    <p class="vedio-stats">768K views &#183; 8 months ago</p>
+                </div>
+            </div>
+        </div>
 
+        <div  class="vedio-prew">
+            <div class="thumbline-row"> <img class="thumbline" src="thumbline/ronaldo.webp"> 
+            </div>
+            <div  class="video-info-grid">
+                <div  > <img class="profile-pic" src="profile/ronaldo.jpg" >
+                </div>
+                <div class="video-info"> 
+                    <p class="vedio-title">Are you ready to discover my new channel?</p>
+                    <p class="vedio-author">  UR  &#183; Cristiano </p>
+                    <p class="vedio-stats"> 16M views &#183; 7 days ago</p>
+                </div>
+            </div>
+        </div>
 
-    <div class="vedio-prew"><img class="thumbline" src="thumbline/hq721.webp">
-        <p class="vedio-head">My Resume 🔥🔥  | EZSNIPPET | Neeraj Walia</p>
-        <p class="vedio-author"> Neeraj Walia </p>
-        <p class="vedio-stat">768K views &#183; 8 months ago</p>
+        <div class="vedio-prew">
+            <div class="thumbline-row"> <img class="thumbline" src="thumbline/fever.webp"> </div>
+            <div class="video-info-grid">
+                <div > <img class="profile-pic" src="profile/fever.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="vedio-title">Fever Feels Horrible, but is Actually Awesome!</p>
+                    <p class="vedio-author"> Kurzgesagt – In a Nutshell </p>
+                    <p class="vedio-stats">4.9M views &#183; 2 weeks ago
+                    </p>
+                </div>      
+            </div>  
+        </div>
+    
+        <div class="vedio-prew">
+            <div class="thumbline-row"> <img class="thumbline" src="thumbline/aws.webp"> 
+            </div>
+            <div  class="video-info-grid"> 
+                <div > <img class="profile-pic" src="profile/aws.jpg">
+                </div>
+                <div class="video-info"> 
+                    <p class="vedio-title">AWS Certified Cloud Practitioner Certification Course (CLF-C02) - Pass the Exam!</p>
+                    <p class="vedio-author">freeCodeCamp.org </p>
+                    <p class="vedio-stats">1M views &#183; 1 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div  class="vedio-prew">
+            <div class="thumbline-row"> <img class="thumbline" src="thumbline/ronaldo.webp"> 
+            </div>
+            <div  class="video-info-grid">
+                <div > <img class="profile-pic" src="profile/ronaldo.jpg" >
+                </div>
+                <div class="video-info"> 
+                    <p class="vedio-title">Are you ready to discover my new channel?</p>
+                    <p class="vedio-author">  UR  &#183; Cristiano </p>
+                    <p class="vedio-stats"> 16M views &#183; 7 days ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="vedio-prew">
+            <div class="thumbline-row"> <img class="thumbline" src="thumbline/hq720.webp"> </div>
+            <div class="video-info-grid">
+                <div > <img class="profile-pic" src="profile/course.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="vedio-title">HTML & CSS Full Course - Beginner to Pro</p>
+                    <p class="vedio-author"> SuperSimpleDev </p>
+                    <p class="vedio-stats">11M views &#183; 2 years ago</p>
+                </div>      
+            </div>  
+        </div>
+      
+        <div class="vedio-prew">
+            <div class="thumbline-row"> <img class="thumbline" src="thumbline/hq721.webp"> 
+            </div>
+            <div  class="video-info-grid"> 
+                <div > <img class="profile-pic" src="profile/Neeraj Walia.jpg">
+                </div>
+                <div class="video-info"> 
+                    <p class="vedio-title">My Resume 🔥🔥  | EZSNIPPET | Neeraj Walia</p>
+                    <p class="vedio-author"> Neeraj Walia </p>
+                    <p class="vedio-stats">768K views &#183; 8 months ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div  class="vedio-prew">
+            <div class="thumbline-row"> <img class="thumbline" src="thumbline/ronaldo.webp"> 
+            </div>
+            <div  class="video-info-grid">
+                <div  > <img class="profile-pic" src="profile/ronaldo.jpg" >
+                </div>
+                <div class="video-info"> 
+                    <p class="vedio-title">Are you ready to discover my new channel?</p>
+                    <p class="vedio-author">  UR  &#183; Cristiano </p>
+                    <p class="vedio-stats"> 16M views &#183; 7 days ago</p>
+                </div>
+            </div>
+        </div>
     </div>
+    
     </body>
 </html>     
