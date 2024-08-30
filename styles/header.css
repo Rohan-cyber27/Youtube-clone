@@ -3,6 +3,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(223, 214, 214);
 }
 .left-section{
     display: flex;
@@ -18,8 +27,12 @@
     align-items: center;
 }
 .right-section{
-    background-color: lightpink;
-    width: 200px;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
 }
 .Hamburger-icon{
     height: 24px;
@@ -31,7 +44,7 @@
     height: 20px;
 }
 .search-button{
-    height: 40px;
+    height: 39px;
     width: 66px;
     background-color: white;
     border-width: 1px;
@@ -39,13 +52,17 @@
     border-color: gray;
     margin-left: -1px;
     margin-right: 10px;
+    position: relative;
+    cursor: pointer;
 }
 .mic-button{
     height: 40px;
     width: 40px;
     border-radius: 20px;
     border: none;
-    background-color:rgb(223, 220, 220);
+    background-color:rgb(249, 249, 249);
+    position: relative;
+    cursor: pointer;
 }
 .image-search
 {
@@ -54,8 +71,13 @@
 }
 .image-mic{
     height: 24px;
-    margin-top: 4px;
+    margin-top: 6px;
 
+}
+.image-user{
+    height: 29px;
+    border-radius: 14px;
+    margin-top: 4PX;
 }
 .search-bar{
     flex: 1;
@@ -66,12 +88,60 @@
     border-style: solid;
     border-color: gray;
     border-radius: 2px;
-    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05)
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    width: 0;
 }
 
 .search-bar::placeholder{
     font-family: Roboto ;
     font-size: 16px;
+}
+.create-button{
+    height: 40px;
+    background-color: white;
+    border:none;
+    position: relative;
+    cursor: pointer;
+}
+.noti-button{
+    height: 40px;
+    background-color: white;
+    border:none;
+    position: relative;
+    cursor: pointer;
 
+}
+.user-button{
+    height: 38px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.search-button .tolltip,
+.mic-button .tolltip,
+.create-button .tolltip,
+.noti-button .tolltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right:8px ;
+    border-radius: 4px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: 0.4s;
+    pointer-events: none;
+    white-space:nowrap;
+   
 
+}
+.search-button:hover .tolltip,
+.mic-button:hover .tolltip,
+.create-button:hover .tolltip,
+.noti-button:hover .tolltip{
+    opacity: 1;
 }
