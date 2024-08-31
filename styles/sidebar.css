@@ -16,8 +16,9 @@
     flex-direction: column;
     cursor: pointer;
 }
-.sidebar-link:hover{
-    background-color: gray;
+.sidebar-link1:hover{
+    background-color: rgb(224, 216, 216);
+    border-radius:40px ;
 }
 .sidebar-link img{
     height: 24px;

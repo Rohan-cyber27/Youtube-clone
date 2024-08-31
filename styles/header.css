@@ -38,10 +38,12 @@
     height: 24px;
     margin-left: 24px;
     margin-right: 20px;
+    cursor: pointer;
 
 }
 .youtube-logo{
     height: 20px;
+    cursor: pointer;
 }
 .search-button{
     height: 39px;
@@ -58,12 +60,19 @@
 .mic-button{
     height: 40px;
     width: 40px;
+    background-color: white;
     border-radius: 20px;
     border: none;
-    background-color:rgb(249, 249, 249);
     position: relative;
     cursor: pointer;
 }
+.mic-button:hover,
+.create-button:hover,
+.noti-button:hover{
+    background-color:rgb(244, 237, 237);
+    border-radius: 30px;
+}
+
 .image-search
 {
     height: 25px;
@@ -136,8 +145,6 @@
     transition: 0.4s;
     pointer-events: none;
     white-space:nowrap;
-   
-
 }
 .search-button:hover .tolltip,
 .mic-button:hover .tolltip,

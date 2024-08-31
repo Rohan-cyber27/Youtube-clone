@@ -2,6 +2,10 @@
 .thumbline{
     width: 100%;
     border-radius: 20px;
+    cursor: pointer;
+}
+.thumbline:active{
+    border-radius: 0px;
 }
 
 .vedio-title{
@@ -18,6 +22,11 @@
 .profile-pic{
     width: 36px;
     border-radius: 50px;
+    cursor: pointer;
+}
+.profile-pic:hover,
+.thumbline:hover{
+    opacity: 0.8;
 }
 .thumbline-row{
     margin-bottom: 10px;
@@ -36,4 +45,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap:40px ;
+}
+@media (max-width: 780px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
 }
